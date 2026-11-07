@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shashankgowda G K — MCA Student & Developer</title>
+<meta name="description" content="Portfolio of Shashankgowda G K: Python, Django, React Native and Generative AI.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#0d1018', panel: '#141925', edge: '#252d3f',
+        text: '#d5dcec', dim: '#8691ad',
+        violet: '#a78bfa', mint: '#5eead4', amber: '#f6c177', rose: '#f28fad'
+      },
+      fontFamily: {
+        sans: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace']
+      }
+    }
+  }
+}
+</script>
+<style>html,body{background:#050507;color:#d5dcec}</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-text antialiased">
+
+<!-- Header -->
+<header class="site-header">
+  <a href="#home" class="logo" aria-label="Shashankgowda G K, home">SG</a>
+  <nav class="pill-nav" aria-label="Main">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+  <a href="#contact" class="book-btn">Book a Call</a>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="horizon" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <a href="#projects" class="news-pill">
+      <b>New</b><span>Emotion Detection project</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+
+    <h1>
+      Turning ideas into<br>
+      useful <em>web &amp; mobile apps</em>
+    </h1>
+
+    <div class="hello-row">
+      <span>Hello, I'm</span>
+      <span class="name-tag">Shashankgowda G K</span>
+      <img class="avatar" src="assets/profile.jpg" alt="Shashankgowda G K" width="54" height="54">
+      <span>A Python &amp; Mobile App Developer</span>
+    </div>
+
+    <div class="cta-row">
+      <a href="#contact" class="connect-btn">
+        Let's Connect
+        <i aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>
+      </a>
+      <a href="mailto:shashankgowdagk@gmail.com" class="mail-link">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
+        shashankgowdagk@gmail.com
+      </a>
+    </div>
+  </div>
+</section>
+
+<main>
+  <div class="max-w-5xl mx-auto px-5 sm:px-8">
+
+    <section id="about" class="pt-20 pb-14">
+      <h2 class="sec-title">About <span class="grad">me</span></h2>
+      <div class="grid md:grid-cols-3 gap-4 mt-10">
+        <div class="bento md:row-span-2" data-r>
+          <small>Tech enthusiast</small>
+          <h3>Always excited to build with the latest tech.</h3>
+          <div id="float" class="relative h-64 mt-4"></div>
+        </div>
+        <div class="bento" data-r>
+          <h3>Let's work together</h3><small>on your next project</small>
+          <img src="assets/profile.jpg" alt="Shashankgowda G K" class="mx-auto my-4 w-16 h-16 rounded-full object-cover" style="object-position:center 15%">
+          <button id="copy-email" data-email="shashankgowdagk@gmail.com" class="mailbtn">shashankgowdagk@gmail.com</button>
+        </div>
+        <div class="bento overflow-hidden" data-r>
+          <small>Based in</small><h3>Bengaluru, India</h3>
+          <small>Open to internships &amp; entry-level roles</small>
+          <canvas id="globe" class="mx-auto mt-2 w-44 h-44 cursor-grab"></canvas>
+        </div>
+        <div class="bento md:col-span-2" data-r>
+          <small>Right now</small><h3>MCA student at Surana College, exploring Generative AI.</h3>
+          <div class="marq mt-5"><div class="marq-track" id="marq"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-16 text-center relative">
+      <div class="ring" aria-hidden="true"></div>
+      <small class="relative">Always learning</small>
+      <h2 class="sec-title relative">My Tech Stack</h2>
+      <div id="chips" class="relative flex flex-wrap justify-center gap-3 mt-10"></div>
+    </section>
+
+    <section id="projects" class="py-16">
+      <h2 class="sec-title text-center">Crafted <span class="grad">Projects</span></h2>
+      <div id="projlist" class="mt-14 space-y-20"></div>
+    </section>
+
+    <section id="experience" class="py-16">
+      <div class="text-center"><span class="pill-badge">Internship experience</span>
+      <h2 class="sec-title mt-5">Work Experience</h2>
+      <p class="text-dim mt-2">Hands-on internships in web and mobile development</p></div>
+      <div id="explist" class="mt-10 space-y-5"></div>
+    </section>
+
+    <section id="education" class="py-14 ">
+      <h2 class="font-mono text-sm text-mint mb-8"># education.yml</h2>
+      <div class="space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-4 rounded-xl border border-edge p-5">
+          <div>
+            <h3 class="text-lg font-semibold">MCA — Surana College (Autonomous), Bengaluru</h3>
+            <div class="font-mono text-xs text-dim mt-1">Oct 2025 – Present</div>
+          </div>
+          <div class="font-mono text-right"><span class="text-2xl text-violet">7.69</span><span class="text-dim text-sm"> / 10 CGPA</span></div>
+        </div>
+        <div class="flex flex-wrap items-center justify-between gap-4 rounded-xl border border-edge p-5">
+          <div>
+            <h3 class="text-lg font-semibold">BCA — SBRR Mahajana First Grade College (Autonomous), Mysuru</h3>
+            <div class="font-mono text-xs text-dim mt-1">Sept 2022 – June 2025</div>
+          </div>
+          <div class="font-mono text-right"><span class="text-2xl text-mint">9.05</span><span class="text-dim text-sm"> / 10 CGPA</span></div>
+        </div>
+      </div>
+    </section><section id="certs" class="py-14 ">
+      <h2 class="font-mono text-sm text-mint mb-8"># certs.txt</h2>
+
+      <h3 class="text-lg font-semibold mb-3">NPTEL online courses</h3>
+      <ul class="divide-y divide-edge border-y border-edge">
+        <li class="py-3 flex flex-wrap justify-between gap-x-6 gap-y-1"><span>Artificial Intelligence Concepts and Techniques</span><span class="font-mono text-sm text-dim">IISc Bangalore · Jul 2025 – Oct 2025</span></li>
+        <li class="py-3 flex flex-wrap justify-between gap-x-6 gap-y-1"><span>Python for Data Science</span><span class="font-mono text-sm text-dim">IIT Madras · Jul 2025 – Aug 2025</span></li>
+        <li class="py-3 flex flex-wrap justify-between gap-x-6 gap-y-1"><span>Privacy and Security in Online Social Media</span><span class="font-mono text-sm text-dim">IIIT Hyderabad · Jan 2024 – Apr 2024</span></li>
+        <li class="py-3 flex flex-wrap justify-between gap-x-6 gap-y-1"><span>Cloud Computing</span><span class="font-mono text-sm text-dim">IIT Kharagpur · Jul 2023 – Oct 2023</span></li>
+      </ul>
+
+      <h3 class="text-lg font-semibold mt-10 mb-3">Other certifications</h3>
+      <ul class="divide-y divide-edge border-y border-edge">
+        <li class="py-3 flex flex-wrap justify-between gap-x-6 gap-y-1"><span>5 Star Gold Badge in Python</span><span class="font-mono text-sm text-dim">HackerRank</span></li>
+        <li class="py-3 flex flex-wrap justify-between gap-x-6 gap-y-1"><span>Generative AI Foundations</span><span class="font-mono text-sm text-dim">UpGrad</span></li>
+        <li class="py-3 flex flex-wrap justify-between gap-x-6 gap-y-1"><span>Python Essentials 1</span><span class="font-mono text-sm text-dim">Cisco</span></li>
+        <li class="py-3 flex flex-wrap justify-between gap-x-6 gap-y-1"><span>Agile Project Management</span><span class="font-mono text-sm text-dim">HP LIFE · HP Foundation</span></li>
+        <li class="py-3 flex flex-wrap justify-between gap-x-6 gap-y-1"><span>Critical Thinking in AI Era</span><span class="font-mono text-sm text-dim">HP LIFE · HP Foundation</span></li>
+        <li class="py-3 flex flex-wrap justify-between gap-x-6 gap-y-1"><span>Data Science and Analytics</span><span class="font-mono text-sm text-dim">HP LIFE · HP Foundation</span></li>
+      </ul>
+    </section>
+    <section id="contact" class="py-16">
+      <h2 class="sec-title text-center">Get in Touch</h2>
+      <p class="text-center text-dim mt-2">Feel free to reach out, I'll get back to you soon.</p>
+      <div class="grid md:grid-cols-[1fr_1.7fr] gap-4 mt-10 max-w-4xl mx-auto">
+        <div class="cbox bg-[#0b0b0e]" data-r>
+          <h3 class="ctitle">Let's Connect</h3>
+          <p class="text-sm text-slate-300 mt-3">Ready to start a project or book a quick call? Reach out through any of these channels.</p>
+          <a class="clink mt-5" href="https://wa.me/918792816862?text=Hi%20Shashank%2C%20I'd%20like%20to%20book%20a%20call." target="_blank" rel="noopener"><i class="ci g">☎</i><span><b>Book a call (WhatsApp)</b><em>+91 87928 16862</em></span></a>
+          <a class="clink mt-2" href="mailto:shashankgowdagk@gmail.com"><i class="ci">✉</i><span><b>Email</b><em>shashankgowdagk@gmail.com</em></span></a>
+          <h4 class="mt-6 mb-3 font-semibold">Follow Me</h4>
+          <a class="clink" href="https://www.linkedin.com/in/shashankgowda-g-k-77084329a" target="_blank" rel="noopener"><i class="ci">in</i><span><b>LinkedIn</b><em>Professional network</em></span></a>
+          <a class="clink mt-2" href="https://github.com/shashu4ever" target="_blank" rel="noopener"><i class="ci">&lt;/&gt;</i><span><b>GitHub</b><em>See my code</em></span></a>
+        </div>
+        <form id="cform" class="cbox bg-[#18181b]" data-r novalidate>
+          <h3 class="ctitle">Send a Message</h3>
+          <label>Name<input id="cf-name" required placeholder="Your name" autocomplete="name"></label>
+          <label>Email<input id="cf-mail" type="email" required placeholder="you@example.com" autocomplete="email"></label>
+          <label>Message<textarea id="cf-msg" rows="4" required placeholder="Tell me about your project or internship opportunity…"></textarea></label>
+          <button type="submit" class="send">Send Message</button>
+          <p id="cf-status" class="text-sm mt-3 min-h-[1.25rem]" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer id="footer" class="foot">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8 grid gap-10 md:grid-cols-[1.3fr_1fr_1fr_1.5fr]">
+    <div><h3 class="text-xl font-bold">Shashankgowda G K</h3>
+      <p class="text-dim mt-3 text-sm">Building apps where clean code and useful features work together.</p>
+      <div class="flex gap-4 mt-5 text-dim">
+        <a href="https://www.linkedin.com/in/shashankgowda-g-k-77084329a" target="_blank" rel="noopener" class="hover:text-white">LinkedIn</a>
+        <a href="https://github.com/shashu4ever" target="_blank" rel="noopener" class="hover:text-white">GitHub</a>
+        <a href="https://wa.me/918792816862" target="_blank" rel="noopener" class="hover:text-white">WhatsApp</a></div></div>
+    <div><h4>The Website</h4><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a></div>
+    <div><h4>Projects</h4><a href="#projects">Recipe App</a><a href="#projects">Emotion Detection</a><a href="#projects">Organ Donation</a><a href="#projects">Course Registration</a></div>
+    <div><p class="text-dim text-sm">I'm open to internships, entry-level roles and collaborative ideas. Let's build something together.</p>
+      <a class="!text-sky-400 mt-4" href="mailto:shashankgowdagk@gmail.com">shashankgowdagk@gmail.com</a>
+      <a class="!text-sky-400" href="tel:+918792816862">+91 87928 16862</a></div>
+  </div>
+  <p class="text-center text-xs text-dim mt-12 pt-6 border-t border-white/10 max-w-5xl mx-auto">© <span id="year">2026</span> Shashankgowda G K. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
